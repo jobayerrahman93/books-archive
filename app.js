@@ -25,8 +25,7 @@ const searchBook = () => {
 
 const displayData = (data, book) => {
     document.getElementById('bookNumber').innerText = data.numFound;
-    console.log(data.numFound);
-    console.log(book);
+   
 
     const bookSection = document.getElementById('book-section');
     const notFound = document.getElementById('notFound');
@@ -40,7 +39,7 @@ const displayData = (data, book) => {
 
         bookSection.textContent = '';
         book.forEach(element => {
-        console.log(element);
+    
 
         const div = document.createElement('div');
 
